@@ -1,23 +1,20 @@
 # cassidoo-2026-09-07
 
-A simple Node.js project using Chai for testing.
+Solution to interview problem sent in [the September 7th, 2026 issue of the rendezvous with cassidoo newsletter](https://buttondown.com/cassidoo/archive/u1f6e3-ufe0f-habit-is-persistence-in-practice/).
 
-## Getting started
+## Problem statement
 
-1. Install dependencies:
-   ```bash
-   npm install
-   ```
-2. Run the tests:
-   ```bash
-   npm test
-   ```
+You have a backpack lock's starting position, and the code to unlock it, represented as two strings of integers. In one move, you may rotate any single digit one step up or down, with 0 and 9 considered adjacent. Return the minimum number of moves needed to transform the starting code into the unlock code.
 
-## Project structure
+### Example:
 
-- `src/` - application source files
-- `test/` - test files
+```
+minMoves("8051", "1199")
+> 10
 
-## License
+minMoves("000", "555")
+> 15
 
-MIT
+minMoves("109", "990")
+> 4
+```
